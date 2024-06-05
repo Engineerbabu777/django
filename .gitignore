@@ -4,3 +4,9 @@
 *./.venv
 **/**.venv
 **/**./.venv
+./day_1/.venv
+/day_1/.venv
+./day_2/.venv
+/day_2/.venv
+./day_3/.venv
+/day_3/.venv
