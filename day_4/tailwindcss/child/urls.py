@@ -20,4 +20,6 @@ from . import views
 urlpatterns = [
     path('/testing', views.testing),
     path('<int:chai_id>/', views.chai_detail,name="chai_details"),
+    path('chai_stores/', views.chai_store_view,name="chai_stores"),
+    
 ]

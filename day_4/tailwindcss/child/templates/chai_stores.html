@@ -1,0 +1,23 @@
+
+
+{% block content %}
+test bloock
+<form method="POST">
+    {% csrf_token %}
+{{form.as_p}}
+<button type="submit">Search Store</button>
+</form>
+
+
+
+{% if stores %}
+    <h2>Stores ok</h2>
+
+    <ul>
+        {% for store in stores%}
+         {{store.name}}
+        {% endfor %}
+    </ul>
+{% endif %}
+    
+{% endblock content %}
